@@ -11,4 +11,3 @@ checkByteOrder w | w == tiffLittleEndian = Just Little
                  | w == tiffBigEndian    = Just Big
                  | otherwise             = Nothing
 
-

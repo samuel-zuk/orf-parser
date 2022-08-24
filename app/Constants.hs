@@ -38,8 +38,10 @@ tiffTagTable = [(254, "NewSubfileType"),
                 (34665, "ExifIFDPtr"),
                 (34853, "GPSIFDPtr")]
 
+-- this sucks haha
 tiffLittleEndian :: Word16
 tiffLittleEndian = fromInteger (toEnum ((shift (ord 'I') 8) + ord 'I'))
+
 tiffBigEndian :: Word16
 tiffBigEndian = fromInteger (toEnum ((shift (ord 'M') 8) + ord 'M'))
 
